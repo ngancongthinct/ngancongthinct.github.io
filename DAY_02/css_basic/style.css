@@ -1,0 +1,40 @@
+h2{
+    background-color: black;
+    color: chartreuse;
+}
+
+/* Thẻ <h3> có id = heading  */
+/* h3 #heading: quan hệ cha con  */
+h3#heading{
+    background-color: black;
+    color: chartreuse ;
+}
+
+#heading {
+     color: greenyellow;
+}
+
+/* Thẻ h3 có id = heading class= heading  */
+h3#heading.heading {
+    color: red;
+}
+
+body h3#heading.heading {
+    color:hotpink;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+.heading.heading1 {
+    color: lawngreen ;
+}
+
+.heading1 {
+    background-color: black;
+}
+
+.heading2 {
+    color: red;
+}

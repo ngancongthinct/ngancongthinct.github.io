@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thẻ table  -->
+    <table>
+        <thead>
+            <!-- Dinh nghia 1 hang -->
+            <tr>
+                <!-- Table heading -->
+                <th>No</th>
+                <th>Fullname</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <!-- Table row -->
+            <tr>
+                <!-- Table data  -->
+                <td>1</td>
+                <td>Lee Taeyong</td>
+                <td>Leader</td>
+                <td>1000$</td>
+            </tr>
+            <tr>
+                <!-- Table data  -->
+                <td rowspan="2">2</td>
+                <td rowspan="2">Nguyen Van B</td>
+                <td>Giam doc</td>
+                <td>3000$</td>
+            </tr>
+            <tr>
+                <!-- Table data  -->
+                <!-- <td>2</td>
+                <td>Nguyen Van B</td> -->
+                <td>Quan ly nhan su</td>
+                <td>2000$</td>
+            </tr>
+            <tr>
+                <!-- Table data  -->
+                <td>3</td>
+                <td>Nguyen Van C</td>
+                <td>Truong phong</td>
+                <td>2000$</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- TABLE 2 -->
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+                <!-- <td>Address</td> -->
+            </tr>
+            <tr>
+                <!-- <td>No</td>
+                <td>Name</td> -->
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lee Taeyong</td>
+                <td>Seoul</td>
+                <td>Korea</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jeong Jaehyun</td>
+                <td>Seoul</td>
+                <td>Korea</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <th>Level1</th>
+            <th>Level2</th>
+            <th>Level3</th>
+            <th>Info</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <!-- Row_1 -->
+            <tr>
+                <td rowspan="6">System</td>
+                <td rowspan="4">System Apps</td>
+                <td rowspan="3">SystemEnv</td>
+                <td>App Test</td>
+                <td>foo</td>
+            </tr>
+
+            <!-- Row_2 -->
+            <tr>
+                <!-- <td>System</td> -->
+                <!-- <td>System Apps</td> -->
+                <!-- <td>SystemEnv</td> -->
+                <td>App Memory</td>
+                <td>foo</td>
+            </tr>
+
+            <!-- Row_3 -->
+            <tr>
+                <!-- <td>System</td> -->
+                <!-- <td>System Apps</td> -->
+                <!-- <td>SystemEnv</td> -->
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+
+            <!-- Row_4 -->
+            <tr>
+                <!-- <td>System</td> -->
+                <!-- <td>System Apps</td> -->
+                <td>SystemEnv2</td>
+                <td>App Test</td>
+                <td>bar</td>
+            </tr>
+
+            <!-- Row_5 -->
+            <tr>
+                <!-- <td>System</td> -->
+                <td rowspan="2">System Memory</td>
+                <td rowspan="2">Memory Test</td>
+                <td>Memory Func</td>
+                <td>foo</td>
+            </tr>
+
+            <!-- Row_6 -->
+            <tr>
+                <!-- <td>System</td> -->
+                <!-- <td>System Memory</td> -->
+                <!-- <td>Memory Test</td> -->
+                <td>Apes Test</td>
+                <td>foo</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

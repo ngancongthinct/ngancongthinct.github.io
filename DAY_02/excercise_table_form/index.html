@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <thead>
+          <th colspan="2">ĐĂNG KÝ</th>
+        </thead>
+        <tbody>
+          <!-- Row full name  -->
+          <tr>
+            <td>Full name</td>
+            <td><input type="text" placeholder="Nhập fullname" /></td>
+          </tr>
+          <!-- Row username  -->
+          <tr>
+            <td>Username</td>
+            <td><input type="text" placeholder="Nhập tên" /></td>
+          </tr>
+          <!-- Row password  -->
+          <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Nhập mật khẩu" /></td>
+          </tr>
+          <!-- Row Nhập lại password -->
+          <tr>
+            <td>Nhập lại<br>Password</td>
+            <td><input type="password" placeholder="Nhập lại mật khẩu" /></td>
+          </tr>
+          <!-- Row giới tính -->
+          <tr>
+            <td>Giới tính</td>
+            <td>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Nam</label>
+
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Nữ</label>
+            </td>
+          </tr>
+          <!-- Row ngày sinh  -->
+          <tr>
+            <td>Ngày sinh</td>
+            <td>
+              <!-- Select day -->
+              <select>
+                <option>Ngày 1</option>
+                <option>Ngày 2</option>
+                <option>Ngày 3</option>
+                <option>Ngày 4</option>
+              </select>
+              <!-- Select month  -->
+              <select>
+                <option>Tháng 1</option>
+                <option>Tháng 2</option>
+                <option>Tháng 3</option>
+                <option>Tháng 4</option>
+              </select>
+              <!-- Select year -->
+              <select>
+                <option>Năm 2015</option>
+                <option>Năm 2016</option>
+                <option>Năm 2017</option>
+                <option>Năm 2018</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Row địa chỉ -->
+          <tr>
+            <td>Địa chỉ</td>
+            <td><textarea></textarea></td>
+          </tr>
+          <!-- Row Avatar -->
+          <tr>
+            <td>Avatar</td>
+            <td><input type="file" id="myfile" name="myfile" /></td>
+          </tr>
+          <!-- Row sở thích -->
+          <tr>
+            <td>Sở thích</td>
+            <td>
+              <input type="checkbox" id="hobby1" name="hobby1" value="cinema" />
+              <label for="vehicle1"> Xem Phim</label>
+              <input type="checkbox" id="hobby2" name="hobby2" value="sport" />
+              <label for="hobby2">Thể Thao</label>
+              <input type="checkbox" id="hobby3" name="hobby3" value="Web" />
+              <label for="hobby3">Web</label><br /><br />
+            </td>
+          </tr>
+          <!-- Row submit  -->
+          <tr>
+            <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Reset" />
+            <input type="submit" value="OK" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
