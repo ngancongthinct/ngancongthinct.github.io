@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* div.card {
+    width: ;
+} */
+
+.card {
+    font-family: 'Roboto', sans-serif;
+    width: 375px;
+    box-shadow: 0px 2px 4px rgb(0 0 0/ 15%);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.time {
+    color: #fff;
+    background-color: #fe6d3f;
+    height: 140px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.year {
+    background-color: #ef5321;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 3px 0;
+    text-align: center;
+    
+}
+
+.day {
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.month {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20.8px;
+    font-weight: 400;
+    color: #212529;
+    padding: 0 30px; 
+}
+
+.card a+p {
+    color: #464646;
+    font-size: 14.4px;
+    padding: 0 30px;
+}
+
+.info{
+    color: #464646;
+    font-size: 14.4px;
+    padding: 7px 30px;
+    
+}
+div.info p:nth-last-of-type(1){
+    border-bottom:1px solid black;
+    padding-bottom: 7px;
+    
+}
+ 
+span{
+    padding-right: 5px;
+}
+
+.info button {
+    background-color: #fff;
+    color: #3c78e8;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 5px;
+}
