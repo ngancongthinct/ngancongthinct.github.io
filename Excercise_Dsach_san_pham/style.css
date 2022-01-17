@@ -138,3 +138,8 @@ h2 a{
     align-items: flex-start;
     margin: auto;
 }
+
+
+.footer a{
+    text-decoration: none;
+}
