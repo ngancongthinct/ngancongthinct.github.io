@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blanchedalmond;
+    height: 2000px;
+}
+
+.parents{
+    width: 1000px;
+    height: 500px;
+    background-color:chartreuse;
+    margin: 100px;
+    
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    /* position: relative;
+    top: 50px;
+    left: 50px; */
+
+    position:absolute;
+    top: 200pxpx;
+    left: 50px;
+
+    
+}
+
+button{
+    position: fixed;
+    padding: 30px;
+    right: 50px;
+    bottom: 50px;
+}
+
+.menu{
+    height: 100px;
+    background-color: chocolate;
+
+    position: sticky;
+    top: 30px;
+}
+
+.box1{
+    background-color:crimson;
+    z-index: 3;
+}
+
+.box2{
+    background-color: cornflowerblue;
+    z-index: 4;
+}
+
+.box3{
+    background-color:darkolivegreen;
+}
