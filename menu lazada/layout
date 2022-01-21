@@ -1,0 +1,20 @@
+ul.menu
+        li.menu-item
+            p
+                span tbdt..
+                span
+                    span.icon-i
+            div.sub-menu
+                ul
+                    li.menu-item
+                        p
+                            span thiết bị điện tử
+                        span
+                            span.icon-i
+
+                        div.sub-menu2
+                            ul
+                                li
+                                li
+                                li
+
