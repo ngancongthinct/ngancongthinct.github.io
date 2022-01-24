@@ -1,0 +1,278 @@
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100: #fff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    /* --text-black-900:#fff */
+    --text-black-700: #504e70;
+    --skin-color: #ec1839;
+    --bg-color-layer1: #C6E5DF;
+    --bg-color-layer2: #EF8295
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+::before, ::after{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
+
+.padd-15{
+    padding: 0 15px;
+}
+
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    position: relative;
+
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    background-color: var(--skin-color);
+    border: none;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.section-title h2{
+    font-size: 40px;
+    color:var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title h2::before{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after{
+    content: "";
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+/* aside */
+.aside{
+    width: 270px;
+    background-color: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--bg-black-50);
+}
+
+.aside .logo{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.aside .logo a span{
+    font-family: 'Clicker Script', cursive;
+    font-family: 40px;
+}
+
+.aside .logo a::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+}
+
+.aside .navigation{
+    margin-top: 50px;
+
+}
+
+.aside .navigation li{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .navigation li a{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--sk);
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--text-black-50);
+}
+
+.aside .navigation li a i{
+    margin-right: 15px;
+}
+
+.aside .navigation li a:hover{
+    color: var(--skin-color);
+}
+
+.photos-container{
+    margin-left: 300px;
+    margin-top: 270px;
+    position: relative;
+    justify-content: center;
+}
+
+/* -----Card------ */
+.card{
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card{
+    width: 350px;
+    box-shadow: 0px 2px 4px rgb(0 0 0/ 15%);
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.card h2{
+    color: #464646;
+    font-size: 24px;
+}
+
+.card-image{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.card-item{
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
