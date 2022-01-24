@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.bgr-snows{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./img/—Pngtree—snow\ falling\ all\ over\ the_4470546.png);
+}
+
+.bgr-snows:nth-child(1){
+    animation: bgr-snows 10s linear infinite;
+}
+
+.bgr-snows:nth-child(2){
+    animation: bgr-snows2 15s linear infinite;
+}
+
+.bgr-snows:nth-child(3){
+    animation: bgr-snows3 20s linear infinite;
+}
+
+@keyframes bgr-snows{
+    0%{
+        background-position-x: 50px;
+        background-position-y: -1500px;
+    }
+
+    100%{
+        background-position-x: 50px;
+        background-position-y: 100vh;
+    }
+}
+
+@keyframes bgr-snows2{
+    0%{
+        background-position-x: 100px;
+        background-position-y: -1500px;
+    }
+
+    100%{
+        background-position-x: 100px;
+        background-position-y: 100vh;
+    }
+}
+
+@keyframes bgr-snows3{
+    0%{
+        transform: scale(1.2);
+        background-position-x: -50px;
+        background-position-y: -1500px;
+    }
+
+    100%{
+        transform: scale(1.2);
+        background-position-x: -50px;
+        background-position-y: 100vh;
+    }
+}
+
+.card-image img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+
+}
+
+.container{
+    width: 1000px;
+    height: 700px;
+    background-color: #f7e7ce;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.falling-flwer{
+    width: 100%;
+    height: 110%;
+    background-image: url(./img/—Pngtree—petals\ falling\ petals\ rose\ flower_5447564.png);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    
+}
+
+.falling-flwer:nth-child(1){
+    background-size: 100%;
+}
+
+.falling-flwer:nth-child(2){
+    background-size: 70%;
+}
+
+
+
+.year-2022{
+    font-family: 'Dongle', sans-serif;
+    font-size: 250px;
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    top: -50px;
+    right: 50px;
+}
+
+.year-2022 span{
+    position: relative;
+    display: inline-block;
+    animation: wavy 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wavy{
+    0%{
+        transform: translateY(0);
+    }
+
+    30%{
+        transform: translateY(-40px);
+    }
+
+    70%,100%{
+        transform: translateY(0);
+    }
+}
+
+.text{
+    width: 500px;
+    height: 400px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    position: relative;
+    transform: translateY(-100px);
+    color: #fff;
+    border:#fff solid;
+    padding: 20px;
+}
+
+.window{
+    width: 350px;
+    height: 350px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    overflow: hidden;
+}
+
+.snows{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background: url(./img/—Pngtree—snow\ falling\ all\ over\ the_4470546.png);
+    background-size: 350px 350px;
+}
+
+.snows:nth-child(1){
+    animation: animate 10s linear infinite;
+}
+
+.snows:nth-child(2){
+    animation: animate2 15s linear infinite;
+}
+
+.snows:nth-child(3){
+    animation: animate3 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x: 50px;
+        background-position-y: 0px;
+    }
+
+    100%{
+        background-position-x: 50px;
+        background-position-y: 350px;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        background-position-x: 100px;
+        background-position-y: 0px;
+    }
+
+    100%{
+        background-position-x: 100px;
+        background-position-y: 350px;
+    }
+}
+
+@keyframes animate3{
+    0%{
+        transform: scale(1.2);
+        background-position-x: -50px;
+        background-position-y: 0px;
+    }
+
+    100%{
+        transform: scale(1.2);
+        background-position-x: -50px;
+        background-position-y: 350px;
+    }
+}
+
+
+
+
+/* Style đèn lồng - hoa mai  */
+.flowers{
+    position: relative;
+}
+
+.flowers img{
+    width: 400px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.light{
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+    background-color: #FFF415;
+}
+
+.light1{
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: 230px;
+    left: 75px;
+    z-index: 2;
+    animation: light1-1 3s infinite;
+}
+
+.light2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 255px;
+    left: 170px;
+    z-index: 2;
+    animation: light1-1 3s infinite;
+
+}
+
+.light3{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 275px;
+    left: 270px;
+    z-index: 2;
+    animation: light1-1 3s infinite;
+
+}
+
+@keyframes light1-1{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(2.3);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+.girls img{
+    width: 450px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
