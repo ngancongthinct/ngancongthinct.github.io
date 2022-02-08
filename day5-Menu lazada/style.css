@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(117, 117, 117);
+    background-color: #000;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+
+.menu{
+    background-color: #fff;
+    height: 340px;
+    position: relative;
+}
+
+.menu-item{
+    width: 200px;
+    
+}
+
+.menu-item p{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    height: 27px;
+    line-height: 27px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item p .icon{
+    display: none;
+}
+
+.menu-item:hover > p,
+.menu-item:hover > p a,.menu-item2:hover > p,
+.menu-item2:hover > p a{
+    color: rgb(243, 109, 0);
+}
+
+.sub-menu{
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    background-color: #fff;
+    height: 340px;
+}
+
+.sub-menu2{
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    background-color: #fff;
+    height: 340px;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.menu-item2:hover .sub-menu2 {
+    display: block;
+}
+
+.menu-item:hover > p .icon,
+.menu-item2:hover > p .icon {
+    display: inline-block;
+    color: rgb(243, 109, 0);
+}
+
+
+
+
