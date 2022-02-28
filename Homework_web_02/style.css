@@ -1,0 +1,835 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+div {
+  display: block;
+}
+
+.header {
+  line-height: 25.6px;
+  display: block;
+  /* font-size: 1rem;
+    line-height: 1.6; */
+}
+
+.header-align {
+  line-height: 25.6px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  text-transform: uppercase;
+  margin-top: 26px;
+  font-family: "Open Sans", sans-serif;
+  /* width: 50%; */
+  width: 509.406px;
+}
+
+.menu a {
+  color: rgb(33, 33, 33);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-item {
+  padding: 0 20px;
+  pointer-events: auto;
+}
+
+.logo h3 {
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+
+.logo h3 a {
+  color: #fe7ec9;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Section 01 */
+.section-1{
+    padding: 80px 0;
+}
+.section-1-align {
+  margin-left: 100px;
+  margin-right: 100px;
+  /* margin-top: 80px; */
+}
+
+.section-1 .layout {
+    display: flex;
+    justify-content: center;
+  }
+
+.section-1-image {
+  background-image: url("https://images03.nicepage.com/c461c07a441a5d220e8feb1a/1928ac4fdeea5ee28a624ce0/firstdayofschoolbacktoschoolphotoideasphotographyhowtotakegreatpictures13.jpg");
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  min-height: 670px;
+  min-width: 570px;
+}
+
+.section-1-text {
+  height: 670px;
+  width: 570px;
+  padding: 0 49px;
+}
+
+.section-1-text h2 {
+    text-align: center;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86.4px;
+  color: #488df4;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 180px;
+}
+
+.section-1-text h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+}
+
+/* Section 2 */
+.section-2{
+    display: flex;
+}
+
+.section-2-item{
+    width: 25%;
+    height:340.188px;
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.learning{
+    background-color:  #38c4c1;
+}
+
+.philosophy{
+    background-color: #feca02;
+}
+
+.practice{
+    background-color: #fe7ec9;
+}
+
+.games{
+    background-color: #488df4;
+}
+
+.section-2 .section-2-item .item-icon img{
+    height: 86px;
+    width: 86px;
+    fill: #fff;
+}
+
+.section-2 .item-text h2{
+    margin-top: 20px;
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* section 3 */
+
+.section-3{
+    background-color: #f2f2f2 ;
+}
+
+.section-3-align{
+    padding: 0 80px;
+    text-align: center;
+    max-width: 970px;
+    margin: 30px 0;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.line{
+    margin: auto;
+    margin-top: 35px;
+}
+
+.section-3-text h1{
+    color: rgb(72, 141, 244);
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Oswald, sans-serif;
+    padding-top: 130px;
+}
+
+.line{
+    height: 6px;
+    width: 67px;
+    border: solid #000
+}
+
+.section-3-text p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    line-height: 34px;
+    color: rgb(66, 67, 75);
+    margin: 35px 0;
+}
+
+
+/* Section 4 */
+
+.section-4{
+    margin: auto;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.section-4-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.section-4-text h4{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    color: #808080 ;
+}
+
+.section-4-text h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    line-height: 57.6px;
+    color: rgb(66, 67, 75);
+}
+
+.item-container{
+    min-width: 580px;
+    min-height: 699px;
+    margin-right: 10px;
+}
+
+.item1{
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/ca5339361f8853548066bb08/b7040d72be0edade2d96c5faa0198690.jpg);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+.item-container .layout-row .card-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    width: 270px;
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.card h4{
+    font-size: 24px;
+    font-weight: 300;
+    text-align:right ;
+    font-family: 'Oswald', sans-serif;
+    color: #808080 ;
+}
+
+.section-4 .card p{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23.8px;
+    text-align: left;
+    color: #42434b;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.teachers{
+    background-color: #ebfcfc ;
+    margin: 0 10px 10px 10px;
+}
+
+.teachers .circle{
+    background-color: #38c4c1 ;
+}
+
+.teachers a{
+    color: #38c4c1;
+}
+
+.mission{
+    background-color: #fff2fa;
+    margin: 0 0 10px 10px;
+}
+
+.mission a{
+    color: #fe7ec9;
+}
+
+.mission .circle{
+    background-color: #fe7ec9 ;
+}
+
+.card .circle{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    justify-items: flex-end;
+}
+.card .circle img{
+    height: 40px;
+    width: 40px;
+}
+
+.section-4 .layout-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.layout-row .card-image{
+    width: 270px;
+    height: 332px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+.layout-row .girl{
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d3bfc71acd69527589c31f1b/d.jpg);
+    margin: 10px 10px 0 10px;
+}
+
+.layout-row .boy{
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf90812ae3b351c4942c0350/dfv.jpg);
+    margin: 10px 0 0 10px;
+}
+
+/* Section 5 */
+
+.section-5{
+    /* height: 615px; */
+    background-color: #feca02 ;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
+.section-5-title h4{
+    /* text-align: center; */
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.section-5-title h2{
+    /* text-align: center; */
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section-5-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-5 .card-container{
+    height: 317px;
+    width: 262.5px;
+    background-color: #fff;
+    margin: 10px;
+    
+}
+
+.section-5 .card-container .card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-5-item .layout-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.section-5 .icon{
+    height: 64px;
+    width: 64px;
+}
+
+.section-5 .card h5{
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section-5 .inviroment{
+    color: #fe7ec9;
+}
+
+.section-5 .active-learning{
+    color: #488df4;
+}
+
+.section-5 .creative-lessons{
+    color: #38c4c1;
+}
+
+.section-5 .qualified-teacher{
+    color: #feca02;
+}
+
+.section-5 .card p{
+    color: #454545;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    align-items: center;
+}
+
+
+/* Section 6 */
+
+.section-6{
+    background-color: #f2f2f2 ;
+    text-align: left;
+    margin: auto;
+    padding: 70px 0 65px 0;
+}
+
+.section-6-align{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-6 .title{
+    margin: 15px 40px;
+}
+
+.section-6 .title h1{
+    color: #42434b ;
+    font-family: Oswald, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.section-6 .paragraph{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-6 .p1, .section-6 .p2{
+    width: 515px;
+    margin: 40px
+}
+
+.section-6 .paragraph p{
+    color: #42434b ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Section 7 */
+.section-7{
+    background-color: #fe7ec9;
+}
+
+.section-7-align{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section-7-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-7 .card{
+    width: 373.328px;
+    height: 477.938px;
+}
+
+.section-7 .girl{
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/ca781a3c8fdc51668d3016a3/c4f5abfbf6e1318f547819911d40eb34.jpg);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.section-7 .boy{
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/45abe08f6d4a5feb8226c2d3/bf76ae7aee2f9e595a6c9f6bdefc52a2.jpg);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.section-7 .text-container{
+    background-color: #fff;
+    margin: 0 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section-7 .text h3{
+    color: #42434b;
+    font-family: Oswald, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-7 .text p{
+    color: #42434b;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    margin-top: 20px;
+}
+
+/* Section 8 */
+
+.section-8{
+    display: flex;
+    justify-content: center;
+}
+
+.section-8 .title-container, .section-8 .layout-row{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-8 .title h4{
+    color: #808080 ;
+    font-family: Oswald, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: center;
+}
+
+.section-8 .title h2{
+    color: #42434b ;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Oswald, sans-serif;
+    line-height: 43.2px;
+    text-align: center;
+}
+
+.section-8 .layout-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-8 .layout-row h5{
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin:10px
+
+}
+
+.section-8 .layout-row p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30.6px;
+    margin: 10px;
+
+}
+
+.section-8 .layout-row .card{
+    width: 364px;
+    height: 647px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-8 .layout-row .card .text{
+    height: 200px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-8 .layout-row .left{
+    text-align: right;
+
+}
+
+.section-8 .card img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+
+
+/* Section 9 */
+
+.section-9{
+    background-color: #38c4c1;
+    display: flex;
+    justify-content: center;
+    padding: 95px 0 23px 0;
+}
+
+.section-9 .title{
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    /* margin: 30px; */
+}
+
+
+.section-9 .title h4{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Oswald, sans-serif;
+}
+
+.section-9 .title h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    margin: 15px 0;
+}
+
+.section-9 .layout-row .card{
+    width: 570px;
+    height: 599.156px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section-9 .layout-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.section-9 .layout-row .image{
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/639687807b39575582358f6f/bf46f3252edb2d29641ccb332f377bc9.jpg);
+    background-position-x: 50%;
+    background-position-y: 7.08%;
+    background-size: cover;
+}
+
+.section-9 .layout-row .text{
+    background-color: #fff;
+}
+
+.section-9 .text h2{
+    color: #42434b;
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    height: 43.1875px;
+    line-height: 43.2px;
+    text-align: left;
+    margin: 12px 40px;
+}
+
+.section-9 .text p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    text-size-adjust: 100%;
+    margin: 12px 40px;
+}
+
+.section-9 .text a{
+    color: #fe7ec9;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25.6px;
+    margin: 12px 40px;
+}
+
+/* Section 10 */
+
+.section-10{
+    padding: 63px 0;
+}
+
+.section-10 .layout-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-10 .contact{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-10 .contact{
+    width: 360px;
+    height: 229px;
+}
+
+.section-10 .circle{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.section-10 .address .circle{
+    background-color: #fe7ec9;
+}
+
+.section-10 .phone .circle{
+    background-color: #feca02;
+}
+
+.section-10 .email .circle{
+    background-color: #38c4c1;
+}
+
+.section-10 .contact img{
+    width: 41px;
+    height: 41px;
+}
+
+.section-10 .contact h6{
+    color: #42434b;
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 16.8px;
+    margin: 35px 0;
+}
+
+/* Footer  */
+
+.footer{
+    background-color: #fe7ec9;
+    padding-top: 108px;
+    padding-bottom: 30px;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-info .info{
+    width: 360px;
+}
+
+.footer .info h6{
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 16.8px;
+    margin-top: 10px;
+}
+
+.footer .info p{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin: 10px 0;;
+}
+
+.footer-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.footer-media .media{
+    margin: 8px;
+}
+
+.footer-media i{
+    font-size: 14.91px;
+    color: #fff;
+}
