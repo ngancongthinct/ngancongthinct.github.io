@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <!-- <h1 id = 'heading'>Hello guys</h1> -->
+    <div id="root"></div>
+    <script type="text/babel">
+        // Cần JS & babel để thực hiện được JSX
+    // const courses = [{
+    // name: 'Lập trình cơ bản',
+    // }, {
+    //   name: 'Design Responsive',
+    // }, {
+    //   name: 'React JS'
+    // }]
+
+  
+    // const ulJSX = (
+    //     <ul>
+    //         {courses.map((course,index) => <li key={index}>{course.name}</li>)}
+    //     </ul>
+    //     )
+
+    // --------------------------------------
+    // function Header({page}){
+    //     return(
+    //         <div class="header">Header + {page}</div>
+    //     )
+    // }
+
+    // class Content extends React.Component{
+    //     render(){
+    //         return(
+    //         <div class="content">Content</div>
+    //     )
+    //     }
+    // }
+
+    // const app =(
+    //     <div class="wrapper">
+    //         <Header page="Techmaster"/>
+    //         <Content/>
+    //         <div class="footer">Footer</div>
+    //     </div>
+    // )
+
+    // console.log(<Header />)
+
+    // ------------------------------------------------------
+
+    // const app =  (
+    //   <div className="post-list">
+    //     <div className="post-item">
+    //       <img src="https://media.techmaster.vn/api/static/c2m5ou451cob24f6skeg/OOWsCl64" alt="[Techmaster] Khai giảng lộ trình Web Frontend + React.js số 27" style={{width: '500px'}} />
+    //       <h1 className="post-title">[Techmaster] Khai giảng lộ trình Web Frontend + React.js số 27</h1>
+    //       <p className="post-published">09 tháng 06, 2022 - 98 lượt xem</p>
+    //     </div>
+    //   </div>
+    // )
+
+    // function PostItem(props){}
+    // function PostItem({titlePost, id, published, callback}){
+    //     if(callback){
+    //         callback(Math.random());
+    //     }
+    //     return(
+    //         <div className="post-item">
+    //             <img src="https://media.techmaster.vn/api/static/c2m5ou451cob24f6skeg/OOWsCl64" alt={titlePost} style={{width: '500px'}} />
+    //             <h1 className="post-title">{titlePost}</h1>
+    //             <p className="post-published">{published}</p>
+    //         </div>
+    //     )
+    // }
+
+    // const post = (
+    //     <div className="post-list">
+    //         <PostItem 
+    //         titlePost="Techmaster 01" 
+    //         id={1} 
+    //         published="09 tháng 06, 2022 - 98 lượt xem"
+    //         callback = {(random) => {
+    //             console.log(random)
+    //         }}
+    //         />
+    //         <PostItem titlePost="Techmaster 02" id={1} published="09 tháng 06, 2022 - 98 lượt xem"/>
+    //         <PostItem titlePost="Techmaster 03" id={1} published="09 tháng 06, 2022 - 98 lượt xem"/>
+    //     </div>
+    // )
+
+
+        const data=[
+	{
+		"name": "Urielle Stanley",
+		"phone": "1-511-757-5684",
+		"email": "cras.vehicula@hotmail.net"
+	},
+	{
+		"name": "Nissim Stevenson",
+		"phone": "1-436-408-9963",
+		"email": "facilisis.vitae@outlook.org"
+	},
+	{
+		"name": "Alfonso Stewart",
+		"phone": "1-305-675-2415",
+		"email": "faucibus.id@aol.couk"
+	},
+	{
+		"name": "Ryan Adams",
+		"phone": "(577) 619-3958",
+		"email": "vitae.velit.egestas@hotmail.com"
+	},
+	{
+		"name": "Macaulay Torres",
+		"phone": "(122) 563-1121",
+		"email": "vitae.nibh@hotmail.couk"
+	}
+]
+    function Data(props){
+        return(
+            <ul>
+                <li>{props.name}</li>
+                <li>{props.phone}</li>
+                <li>{props.email}</li>
+            </ul>
+        )
+    }
+
+   const renderEl = (
+       data.map((ele, index) => <Data 
+       key = {index} 
+       name = {ele.name} 
+       phone = {ele.phone} 
+       email = {ele.email}/>)
+   )
+
+        const container = document.getElementById('root')
+        const root = ReactDOM.createRoot(container)
+        // root.render(ulJSX)
+        // root.render(app)
+        root.render(renderEl)
+
+   
+        
+
+
+
+    
+    </script>
+    
+   
+</body>
+
+</html>
