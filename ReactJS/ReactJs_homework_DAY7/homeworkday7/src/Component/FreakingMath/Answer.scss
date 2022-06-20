@@ -1,0 +1,35 @@
+.container{
+    width: 637px;
+    height: 950px;
+}
+.achiev{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 25px;
+}
+
+.calculation{
+    color: #fff;
+    font-size: 40px;
+}
+
+button{
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    margin: 40px;
+    font-size: 130px;
+    margin-top: 400px;
+    
+}
+
+#trueValue{
+    color: green;
+}
+
+#falseValue{
+    color: red;
+}
