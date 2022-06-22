@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import './Answer.scss'
 
@@ -43,6 +43,56 @@ function MathFreaking(props) {
     const [currentResult, setCurrentResult] = useState(true);
     const [score, setScore] = useState(0);
     const [level, setLevel] = useState(1);
+    const [timeRemain, setTimeRemain] = useState(10);
+    const [timer, setTimer] = useState();
+    
+
+    //Get timer remaining
+   
+    function updateTimer() {
+        return setInterval(() => {
+            console.log(10)
+            setTimeRemain(timeRemain => timeRemain -1);
+        }, 1000);
+    }
+
+    useEffect(() => {
+        generate();
+        return clearInterval(timer);
+    }, []);
+
+    useEffect(() => {
+        if (timeRemain == 0 ){
+            doLose();
+        }
+    }, [timeRemain]);
+
+    function doWin(){
+        generate();
+        setScore(score+1);
+        if(score % 10 == 0 && score > 0){
+            setLevel(level+1);
+        }
+        clearInterval(timer);
+        setTimeRemain(10);
+    }
+ 
+    function doLose() {
+        let highestScore = localStorage.getItem('highest_score') || 0;
+        if (score > highestScore) {
+            highestScore = score;
+            localStorage.setItem('highest_score', highestScore);
+        }
+        generate();
+        setScore(0);
+        alert(`Điểm của bạn là ${score} \n Điểm cao nhất: ${highestScore}`);
+        setLevel(1);
+        setScore(0);
+        clearInterval(timer);
+        setTimeRemain(10);
+    }
+
+    //Function handle calculation 
     function generate(){
         const newNum1 = getRandomNum(1*Math.pow(10,level -1),10*Math.pow(10, level-1))
         setNum1(newNum1)      
@@ -56,42 +106,29 @@ function MathFreaking(props) {
         const fakeResult = getFakeResult(newNum1, newNum2, newOp)
         let randomResult = Math.random() > 0.5
         if (randomResult) {
-            console.log('currentResult: ', currentResult)
             setCurrentResult(true)
             setRes(result);
         } else {
-            console.log('currentResult: ', currentResult)
             setCurrentResult(false)
             setRes(fakeResult);
-
-        }
+        }  
+        setTimer(updateTimer());
     }
 
+
+    //Function check
     function handleClick(result) {
         if (result === currentResult) {
-            generate();
-            setScore(score+1);
-            if(score % 10 == 0 && score > 0){
-                setLevel(level+1);
-            }
+            doWin()
         } else {
-            let highestScore = localStorage.getItem('highest_score') || 0;
-            if (score > highestScore) {
-                highestScore = score;
-                localStorage.setItem('highest_score', highestScore);
-            }
-            generate();
-            setScore(0);
-            alert(`Điểm của bạn là ${score} \n Điểm cao nhất: ${highestScore}`);
-            setLevel(1);
-            setScore(0);
-
+            doLose();
         }
     }
     return (
         <div className='container' style={{backgroundColor: color}}>
             <div className="achiev">
                 <h1 className="level">Level: {level}</h1>
+                <h3>00:{timeRemain}</h3>
                 <h1 className="points">Points: {score}</h1>
             </div>
             <div className="calculation">
@@ -100,12 +137,12 @@ function MathFreaking(props) {
             <div id ="clickArea">
                 <button id='trueValue'
                 onClick={() => handleClick(true)}>
-                    <i class="fa fa-check"></i>
+                    <i className ="fa fa-check"></i>
                 </button>
                 <button id='falseValue'
                 onClick={() => handleClick(false)}
                 >
-                    <i class="fa fa-close"></i>
+                    <i className ="fa fa-close"></i>
                 </button>
             </div>
             
